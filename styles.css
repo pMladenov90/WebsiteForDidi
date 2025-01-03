@@ -1,0 +1,51 @@
+/* styles.css */
+
+/* Basic styling for the navbar */
+.navbar {
+    background-color: #02532a; /* Dark background color */
+    padding: 10px 0; /* Space around the navbar */
+    text-align: center; /* Center the items */
+}
+
+/* Styling for the navbar links */
+.navbar-links {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline-block; /* Display list items in a horizontal row */
+    margin: 0 15px; /* Space between links */
+}
+
+.navbar-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Make text bold */
+    padding: 5px 10px; /* Padding around the link */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for links */
+.navbar-links a:hover {
+    background-color: #0295f0; /* Change background on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.image-container {
+    display: flex;  /* Aligns images side by side */
+    justify-content: center; /* Centers images horizontally */
+    /* gap: 20px; Adds space between the images */
+    margin-top: 50px;
+}
+
+.image {
+    width: 45%;  /* Adjusts image width to make them fit side by side */
+    height: auto;
+}
+
+body{
+    background-color: #5572bc;
+}
