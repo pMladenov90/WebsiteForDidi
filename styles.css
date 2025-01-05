@@ -2,7 +2,7 @@
 
 /* Basic styling for the navbar */
 .navbar {
-    background-color: #02532a; /* Dark background color */
+    background-color: #c1029a; /* Dark background color */
     padding: 10px 0; /* Space around the navbar */
     text-align: center; /* Center the items */
 }
@@ -64,3 +64,23 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.footer-icons {
+    display: flex;
+    justify-content: center; /* Centers the icons horizontally */
+    gap: 20px; /* Adds space between the icons */
+  }
+  
+  .footer-icon {
+    width: 50px; /* Adjust width for uniform size */
+    height: 50px; /* Same as width for a square shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-icon img {
+    max-width: 100%; /* Ensures the icon scales with the container */
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+  }
