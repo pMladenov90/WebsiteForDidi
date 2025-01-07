@@ -1,0 +1,16 @@
+Notes for Didis website
+
+JavaScript related stuff:
+- Make the Контакт button go smooth to the bottom of the footer where
+all the information is. ChatGPT gave me the following solution:
+<!-- JavaScript for Smooth Scrolling -->
+    <script>
+        // When the "Контакти" link is clicked
+        document.getElementById('contactButton').addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default action
+            // Scroll to the footer
+            document.getElementById('footer').scrollIntoView({
+                behavior: 'smooth' // Smooth scroll
+            });
+        });
+</script>
