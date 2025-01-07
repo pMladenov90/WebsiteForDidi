@@ -84,3 +84,7 @@ footer {
     max-height: 100%;
     object-fit: contain; /* Ensures the image maintains its aspect ratio */
   }
+
+/*html {
+    scroll-behavior: smooth; /* This enables smooth scrolling for the whole page */
+/*}
