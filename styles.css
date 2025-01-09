@@ -85,6 +85,34 @@ footer {
     object-fit: contain; /* Ensures the image maintains its aspect ratio */
   }
 
+  .comment-section {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-color: #979292;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comments {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.comment {
+    background-color: #79e693;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.comment .author {
+    font-weight: bold;
+}
+
+.comment .content {
+    margin-top: 5px;
+}
 /*html {
     scroll-behavior: smooth; /* This enables smooth scrolling for the whole page */
 /*}

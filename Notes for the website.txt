@@ -13,4 +13,6 @@ all the information is. ChatGPT gave me the following solution:
                 behavior: 'smooth' // Smooth scroll
             });
         });
+		
+Коментарите трябва да вървят на каросел. Предполагам това пак ще стане с JavaScript.
 </script>
