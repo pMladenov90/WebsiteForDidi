@@ -5,6 +5,7 @@
     background-color: #c1029a; /* Dark background color */
     padding: 10px 0; /* Space around the navbar */
     text-align: center; /* Center the items */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Styling for the navbar links */
@@ -48,11 +49,13 @@
 
 body{
     background-color: #5572bc;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h6 {
     font-size: 4rem;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
@@ -63,6 +66,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-icons {
