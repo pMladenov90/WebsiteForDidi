@@ -1,6 +1,4 @@
-/* styles.css */
-
-/* Basic styling for the navbar */
+/* ===== Navbar styling ===== */
 .navbar {
     background-color: #c1029a; /* Dark background color */
     padding: 10px 20px; /* Space around the navbar */
@@ -35,6 +33,7 @@
     background-color: #0295f0; /* Change background on hover */
     border-radius: 5px; /* Rounded corners */
 }
+/* ===== ===== ===== ===== */
 
 .image-container {
     display: flex;  /* Aligns images side by side */
@@ -42,6 +41,9 @@
     /* gap: 20px; Adds space between the images */
     margin-top: 50px;
 }
+/* About me Styling section START */
+
+/* About me Syyling section END */
 
 .image {
     width: 45%;  /* Adjusts image width to make them fit side by side */
@@ -59,6 +61,7 @@ h6 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Here starts the footer section */
 footer {
     background-color: #c1029a;
     color: white;
@@ -89,7 +92,9 @@ footer {
     max-height: 100%;
     object-fit: contain; /* Ensures the image maintains its aspect ratio */
   }
+/* ===== ===== ===== ===== */
 
+/*Comment section NOTE:Make it in carosel */
   .comment-section {
     width: 60%;
     margin: auto;
