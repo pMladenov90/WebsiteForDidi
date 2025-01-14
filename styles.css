@@ -1,6 +1,6 @@
 /* ===== Navbar styling ===== */
 .navbar {
-    background-color: #c1029a; /* Dark background color */
+    background-color: #cd9fa1; /* Dark background color */
     padding: 10px 20px; /* Space around the navbar */
     text-align: center; /* Center the items */
     border-radius: 10px; /* Round edges */
@@ -51,7 +51,7 @@
 }
 
 body{
-    background-color: #5572bc;
+    background-color:#35356e;
     font-family: Arial, Helvetica, sans-serif;
 }
 
