@@ -3,8 +3,9 @@
 /* Basic styling for the navbar */
 .navbar {
     background-color: #c1029a; /* Dark background color */
-    padding: 10px 0; /* Space around the navbar */
+    padding: 10px 20px; /* Space around the navbar */
     text-align: center; /* Center the items */
+    border-radius: 10px; /* Round edges */
     font-family: Arial, Helvetica, sans-serif;
 }
 
