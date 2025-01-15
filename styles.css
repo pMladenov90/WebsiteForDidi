@@ -1,6 +1,6 @@
 /* ===== Navbar styling ===== */
 .navbar {
-    background-color: #cd9fa1; /* Dark background color */
+    background-color: transparent; /* Dark background color */
     padding: 10px 20px; /* Space around the navbar */
     text-align: center; /* Center the items */
     border-radius: 10px; /* Round edges */
@@ -51,8 +51,11 @@
 }
 
 body{
-    background-color:#35356e;
-    font-family: Arial, Helvetica, sans-serif;
+    background: hsla(357, 32%, 71%, 1);
+    background: linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+    background: -moz-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+    background: -webkit-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CD9FA1", endColorstr="#110C3B", GradientType=1 );
 }
 
 h6 {
@@ -63,7 +66,7 @@ h6 {
 
 /* Here starts the footer section */
 footer {
-    background-color: #c1029a;
+    background-color: transparent;
     color: white;
     padding: 20px 0;
     text-align: center;
