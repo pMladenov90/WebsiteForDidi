@@ -10,15 +10,16 @@ function showSlide(index) {
     });
 }
 
-function moveSlide(step) {
-    currentSlide += step;
+function nextSlide() {
+    currentSlide++;
     if (currentSlide >= comments.length) {
         currentSlide = 0;
-    } else if (currentSlide < 0) {
-        currentSlide = comments.length - 1;
     }
     showSlide(currentSlide);
 }
 
 // Initialize the first slide
 showSlide(currentSlide);
+
+// Set interval for automatic slideshow
+setInterval(nextSlide, 3000); // Change slide every 3 seconds
