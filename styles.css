@@ -98,34 +98,58 @@ footer {
 /* ===== ===== ===== ===== */
 
 /*Comment section NOTE:Make it in carosel */
-  .comment-section {
-    width: 60%;
-    margin: auto;
+
+/* Carousel container styling */
+.carousel-container {
+    position: relative;
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the carousel */
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Comment section styling */
+.comment-section {
     padding: 20px;
-    background-color: #979292;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
 .comments {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .comment {
-    background-color: #79e693;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 4px;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: none; /* Hide all comments initially */
 }
 
-.comment .author {
+.comment.active {
+    display: block; /* Show the active comment */
+}
+
+/* Navigation buttons styling */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
     font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
-.comment .content {
-    margin-top: 5px;
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
-/*html {
-    scroll-behavior: smooth; /* This enables smooth scrolling for the whole page */
-/*}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
