@@ -35,11 +35,12 @@
 }
 /* ===== ===== ===== ===== */
 
+
 .image-container {
     display: flex;  /* Aligns images side by side */
     justify-content: center; /* Centers images horizontally */
     /* gap: 20px; Adds space between the images */
-    margin-top: 50px;
+    margin-top: 30px;
 }
 /* About me Styling section START */
 
@@ -56,6 +57,13 @@ body{
     background: -moz-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
     background: -webkit-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CD9FA1", endColorstr="#110C3B", GradientType=1 );
+}
+
+h4{
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h6 {
@@ -97,9 +105,7 @@ footer {
   }
 /* ===== ===== ===== ===== */
 
-/*Comment section NOTE:Make it in carosel */
-
-/* Carousel container styling */
+/* ===== Carousel container styling ===== */
 .carousel-container {
     position: relative;
     max-width: 800px; /* Adjust the width as needed */
@@ -111,6 +117,11 @@ footer {
 /* Comment section styling */
 .comment-section {
     padding: 20px;
+    background-color: #f9f9f9; /* Light background color for the comment section */
+    border-radius: 10px; /* Rounded edges for the comment section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better visibility */
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 40px auto; /* Center the comment section */
 }
 
 .comments {
