@@ -245,72 +245,71 @@ body.pricesBody {
 /* ===== ===== ===== ===== */
 
 /* ===== How to order? ===== */
-/* maybe I will not need a body afterall */
-
-.container {
+/* Infographic container styling */
+.infographic-container {
+    width: 80%;
+    max-width: 1200px;
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.infographic-step {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+    position: relative;
+}
+
+.infographic-step:nth-child(odd) {
+    flex-direction: row-reverse;
 }
 
 .bubble {
-    background: linear-gradient(to bottom, #110c3b, #cc9ea4);
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    padding: 40px 20px;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.bubble::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -30px;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
     border-radius: 50%;
-    transform: translateY(-50%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.bubble:last-child::after {
-    content: none;
-}
-
-.number {
-    background-color: white;
-    color: #110c3b;
-    font-size: 2rem;
-    font-weight: bold;
-    width: 50px;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 3em; /* Increase font size */
+    font-weight: bold;
+    width: 200px; /* Increase width */
+    height: 200px; /* Increase height */
+    margin: 10px; /* Reduce margin for closer bubbles */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
-h2 {
-    font-size: 1.2rem;
-    margin: 10px 0;
-    text-transform: uppercase;
+.bubble:hover {
+    transform: scale(1.1); /* Pop-up effect on hover */
 }
 
-p {
-    font-size: 0.9rem;
+.bubble.orange {
+    background-color: #f4a71d;
+}
+
+.bubble.blue {
+    background-color: #00bcd4;
+}
+
+.bubble.red {
+    background-color: #e74c3c;
+}
+
+.bubble-text {
+    text-align: center;
+    font-size: 1.2em; /* Adjust font size as needed */
+    color: #333;
     line-height: 1.5;
+    max-width: 250px;
+    margin: 0 20px; /* Add margin for spacing */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for appearing text */
 }
 
+.infographic-step:hover .bubble-text {
+    opacity: 1; /* Show text on hover */
+}
 /* ===== ===== ===== ===== */
