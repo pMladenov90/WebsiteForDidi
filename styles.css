@@ -281,30 +281,30 @@ body.pricesBody {
     transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
-.bubble:hover {
-    transform: scale(1.1); /* Pop-up effect on hover */
-}
+/* .bubble:hover {
+    transform: scale(1.1); /* Pop-up effect on hover 
+} */
 
 .bubble.orange {
-    background-color: #f4a71d;
+    background-color: #4a4a8a;
 }
 
 .bubble.blue {
-    background-color: #00bcd4;
+    background-color: #7d4c96;
 }
 
 .bubble.red {
-    background-color: #e74c3c;
+    background-color: #d96383;
 }
 
 .comic-bubble {
     position: relative;
-    background: #fff;
+    background: silver;
     border: 2px solid #000;
     border-radius: 15px;
     padding: 15px 20px;
     max-width: 250px;
-    text-align: center;
+    text-align: left;
     box-shadow: 3px 3px 0 #000;
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease; /* Smooth transition for appearing text */
