@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comic Bubble</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .comic-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .comic-bubble {
+      position: relative;
+      background: #fff;
+      border: 2px solid #000;
+      border-radius: 15px;
+      padding: 15px 20px;
+      max-width: 250px;
+      text-align: center;
+      box-shadow: 3px 3px 0 #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="comic-container">
+    <div class="comic-bubble">
+      <p>Hey there! This is a comic bubble without a tail!</p>
+    </div>
+  </div>
+</body>
+</html>

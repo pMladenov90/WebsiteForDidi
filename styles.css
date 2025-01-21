@@ -286,29 +286,31 @@ body.pricesBody {
 }
 
 .bubble.orange {
-    background-color: #cda0a1;
+    background-color: #f4a71d;
 }
 
 .bubble.blue {
-    background-color: #995764;
+    background-color: #00bcd4;
 }
 
 .bubble.red {
-    background-color: #67254e;
+    background-color: #e74c3c;
 }
 
-.bubble-text {
-    text-align: center;
-    font-size: 1.2em; /* Adjust font size as needed */
-    color: whitesmoke;
-    line-height: 1.5;
+.comic-bubble {
+    position: relative;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 15px 20px;
     max-width: 250px;
-    margin: 0 20px; /* Add margin for spacing */
+    text-align: center;
+    box-shadow: 3px 3px 0 #000;
     opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease; /* Smooth transition for appearing text */
 }
 
-.infographic-step:hover .bubble-text {
+.infographic-step:hover .comic-bubble {
     opacity: 1; /* Show text on hover */
 }
 /* ===== ===== ===== ===== */
