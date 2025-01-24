@@ -1,3 +1,4 @@
+/* ===== Comments ===== */
 let currentSlide = 0;
 const comments = document.querySelectorAll('.comment');
 
