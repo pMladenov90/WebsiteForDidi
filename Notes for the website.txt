@@ -21,3 +21,13 @@ all the information is. ChatGPT gave me the following solution:
 - Портрети
 - Илюстрации
 - Детски книжки 
+
+
+ВАЖНО!!! Провери си промпта в ChatGPT(Image gallery with a Lightebox). Трябва да се оправи Галерията и да се спазят усолвията горе.
+
+The issue is likely caused by the display: flex; property on the body element, which centers all children elements, including your header, gallery, and footer. To resolve this, you should use a more appropriate layout structure, such as a flexbox or grid container for the entire page.
+
+Here’s how to fix it:
+
+Wrap your header, gallery, and footer in a container <div> to control the layout.
+Update your CSS to ensure the header, gallery, and footer align vertically in a column.
