@@ -1,0 +1,125 @@
+@import "compass/css3";
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -ms-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+$bg1: "Pictures for the Gallery/drHouse.jpg";
+$bg2: "Pictures for the Gallery/girlWithGlasses.jpg";
+$bg3: "Pictures for the Gallery/girlWithRose.jpg";
+$bg4: "Pictures for the Gallery/oliver.jpg";
+
+body { 
+  background: #444;
+  display: flex;
+  flex-direction: column;
+}
+
+.credits {
+  text-align: right;
+  margin-top: 15px;
+  a {
+    color: #222;
+    background-color: #f8dc3d;
+    font-family: "Segoe UI", "Ubuntu", monospace;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 2px 10px;
+    border-radius: 4px
+  }
+}
+
+ul {
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  li {
+    float: left; 
+    width: 16.666%; 
+    height: 600px;
+    opacity: 0.4;
+    @include transition(all .5s ease-in-out);
+    
+    &:hover,
+    &:first-child ~ li:last-child {
+      width: 50%;
+      opacity: 1;
+      @include transition(all .5s ease-in-out);
+    }
+    
+    &:hover ~ li:last-child {
+      width: 16.666%;
+      opacity: 0.4;
+    }
+    
+    &:nth-child(1) {
+      background: url($bg1) top center no-repeat;
+    }
+    &:nth-child(2) {
+      background: url($bg2) top right no-repeat;
+    }
+    &:nth-child(3) {
+      background: url($bg3) top center no-repeat;
+    }
+    &:nth-child(4) {
+      background: url($bg4) top center no-repeat;
+    }
+  }
+  
+} // End ul
+
+/** Add cool filter efects **/
+ul li {
+  &::before {
+    content: "";
+    display:block;
+    width:0;
+    height:100%;
+    @include transition(all .5s ease-in-out);
+  }
+
+  &:nth-child(1)::before { background-color: rgba(255, 87, 34, .2)}
+  &:nth-child(2)::before { background-color: rgba(76, 175, 80, .25)}
+  &:nth-child(3)::before { background-color: rgba(33, 150, 243, .25)}
+  &:nth-child(4)::before { background-color: rgba(156, 39, 176, .2)}
+}
+
+input:checked ~ ul li::before { 
+  width: 100%;
+  @include transition(all .5s ease-in-out);
+}
+
+input[type="checkbox"] {
+  width:555px;
+  margin: 15px;
+  font-family: "Segoe UI", "Ubuntu", monospace;
+  color: white;
+  &::before { 
+    content: "Pure CSS Accordion";
+    font-size: 1.5em;
+    position: relative;
+    top:-10px;
+  }
+  &::after{
+    content: "Filters Enabled";
+    color: #caa;
+    position: relative;
+    top:-10px;
+    left: 5px;
+  }
+}
+
+/** Layout fixes **/
+.credits a { 
+  margin-right: calc((100% - 1230px)/2); 
+}
+input[type="checkbox"] { 
+  margin-left: calc((100% - 1160px)/2); 
+}
+@media (max-width: 1240px) {
+  .credits a { margin-right: 0px; }
+  input[type="checkbox"] { margin-left: 35px; }
+}
