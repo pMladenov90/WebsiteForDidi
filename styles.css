@@ -42,6 +42,39 @@
 }
 /* ===== ===== ===== ===== */
 
+/* About me Styling section START */
+
+body.bodyAboutMe {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.containerForAboutMe {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 50px;
+}
+.leftSectionAboutMe {
+    background: white;
+    padding: 40px;
+    width: 50%;
+}
+.content h2 {
+    color: #e85a0c;
+}
+.content p.textAboutMe {
+    color: #333;
+    line-height: 1.6;
+}
+
+.image.rightAboutMe {
+    width: 50%;
+    background: transparent;
+    background-size: cover;
+    height: 400px;
+}
+
+/* About me Syyling section END */
 
 .image-container {
     display: flex;  /* Aligns images side by side */
