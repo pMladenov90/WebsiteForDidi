@@ -50,14 +50,15 @@ body.bodyAboutMe {
 }
 .containerForAboutMe {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     background: transparent;
-    padding: 50px;
+    padding: 80px;
+
 }
 .leftSectionAboutMe {
-    background: white;
+    background:silver;
     padding: 40px;
-    width: 50%;
+    width: 20%;
 }
 .content h2 {
     color: #e85a0c;
@@ -68,7 +69,7 @@ body.bodyAboutMe {
 }
 
 .image.rightAboutMe {
-    width: 50%;
+    width: 20%;
     background: transparent;
     background-size: cover;
     height: 400px;
