@@ -83,10 +83,7 @@ body.bodyAboutMe {
     /* gap: 20px; Adds space between the images */
     margin-top: 30px;
 }
-/* About me Styling section START */
-
-/* About me Syyling section END */
-
+/*  About me Styling section START */
 .image {
     width: 45%;  /* Adjusts image width to make them fit side by side */
     height: auto;

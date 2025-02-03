@@ -1,4 +1,4 @@
-/* ===== Navbar styling ===== */
+/* Navbar styling START> */
 .header {
     background-color: #4a4a8a; /* Dark background color */
     padding: 10px 20px; /* Space around the navbar */
@@ -41,7 +41,9 @@
     border-radius: 5px; /* Rounded corners */
 }
 
-/* About me Styling section START */
+/* Navbar styling <END */
+
+/* About me Styling section START> */
 
 body.bodyAboutMe {
     margin: 0;
@@ -56,7 +58,12 @@ body.bodyAboutMe {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: silver;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 40px;
     margin: 20px;
     max-width: 1200px;
@@ -123,7 +130,9 @@ h6 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Here starts the footer section */
+/* About me Styling section <END */
+
+/* Footer section START> */
 footer {
     background-color: transparent;
     color: white;
@@ -154,3 +163,5 @@ footer {
     max-height: 100%;
     object-fit: contain; /* Ensures the image maintains its aspect ratio */
 }
+
+/* Footer section <END */
