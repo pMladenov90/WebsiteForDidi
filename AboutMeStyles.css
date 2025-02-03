@@ -1,5 +1,5 @@
 /* ===== Navbar styling ===== */
-.header{
+.header {
     background-color: #4a4a8a; /* Dark background color */
     padding: 10px 20px; /* Space around the navbar */
     text-align: center; /* Center the items */
@@ -46,49 +46,63 @@
 body.bodyAboutMe {
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
 }
+
 .containerForAboutMe {
     display: flex;
-    align-items: stretch;
-    background: transparent;
-    padding: 80px;
-
-}
-.leftSectionAboutMe {
-    background:silver;
+    justify-content: center;
+    align-items: center;
+    background: silver;
     padding: 40px;
-    width: 20%;
+    margin: 20px;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
-.content h2 {
-    color: #e85a0c;
+
+.leftSectionAboutMe {
+    flex: 1;
+    padding: 20px;
 }
-.content p.textAboutMe {
-    color: #333;
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 16px;
     line-height: 1.6;
 }
 
-.image.rightAboutMe {
-    width: 20%;
-    background: transparent;
-    background-size: cover;
-    height: 400px;
+.rightSectionAboutMe {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* About me Syyling section END */
-
 .image-container {
-    display: flex;  /* Aligns images side by side */
-    justify-content: center; /* Centers images horizontally */
-    /* gap: 20px; Adds space between the images */
-    margin-top: 30px;
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .image {
-    width: 45%;  /* Adjusts image width to make them fit side by side */
+    width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
-body{
+body {
     background: hsla(357, 32%, 71%, 1);
     background: linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
     background: -moz-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
@@ -96,7 +110,7 @@ body{
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CD9FA1", endColorstr="#110C3B", GradientType=1 );
 }
 
-h4{
+h4 {
     font-size: 2rem;
     color: black;
     text-align: center;
@@ -125,18 +139,18 @@ footer {
     display: flex;
     justify-content: center; /* Centers the icons horizontally */
     gap: 20px; /* Adds space between the icons */
-  }
-  
-  .footer-icon {
+}
+
+.footer-icon {
     width: 50px; /* Adjust width for uniform size */
     height: 50px; /* Same as width for a square shape */
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .footer-icon img {
+}
+
+.footer-icon img {
     max-width: 100%; /* Ensures the icon scales with the container */
     max-height: 100%;
     object-fit: contain; /* Ensures the image maintains its aspect ratio */
-  }
+}
