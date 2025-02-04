@@ -1,0 +1,203 @@
+/* Navbar styling START> */
+.header {
+    background-color: #4a4a8a; /* Dark background color */
+    padding: 10px 20px; /* Space around the navbar */
+    text-align: center; /* Center the items */
+    border-radius: 10px; /* Round edges */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+    background-color: transparent; /* Dark background color */
+    padding: 10px 20px; /* Space around the navbar */
+    text-align: center; /* Center the items */
+    border-radius: 10px; /* Round edges */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling for the navbar links */
+.navbar-links {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline-block; /* Display list items in a horizontal row */
+    margin: 0 15px; /* Space between links */
+}
+
+.navbar-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Make text bold */
+    padding: 5px 10px; /* Padding around the link */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for links */
+.navbar-links a:hover {
+    background-color: #b770ae; /* Change background on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Navbar styling <END */
+
+/* Prices Styling section START> */
+
+body.bodyAboutMe {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+body {
+    background: hsla(357, 32%, 71%, 1);
+    background: linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+    background: -moz-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+    background: -webkit-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CD9FA1", endColorstr="#110C3B", GradientType=1 );
+}
+
+h4 {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h6 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Prices Styling section <END */
+
+/* Cards START> */
+
+body.pricesBody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.pricing-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pricing-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color:white
+}
+
+.pricing-section .description {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #4a4a8a; /* Default background color */
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px; /* Space between cards */
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.card ul li {
+    margin: 5px 0;
+}
+
+/* Card specific styles */
+.card.medium {
+    background-color: #7d4c96;
+}
+
+.card.expert {
+    background-color: #d96383;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+/* CARDS <END */
+
+/* Footer section START> */
+footer {
+    background-color: transparent;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center; /* Centers the icons horizontally */
+    gap: 20px; /* Adds space between the icons */
+}
+
+.footer-icon {
+    width: 50px; /* Adjust width for uniform size */
+    height: 50px; /* Same as width for a square shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon img {
+    max-width: 100%; /* Ensures the icon scales with the container */
+    max-height: 100%;
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+}
+
+/* Footer section <END */
