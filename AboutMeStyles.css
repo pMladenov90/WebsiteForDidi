@@ -61,8 +61,8 @@ body.bodyAboutMe {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 40px;
     margin: 20px;
@@ -111,9 +111,9 @@ body.bodyAboutMe {
 
 body {
     background: hsla(357, 32%, 71%, 1);
-    background: linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
-    background: -moz-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
     background: -webkit-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+    background: -moz-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+    background: linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CD9FA1", endColorstr="#110C3B", GradientType=1 );
 }
 
