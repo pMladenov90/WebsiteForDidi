@@ -1,0 +1,76 @@
+/* Accordion container styling */
+.accordion {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Details and summary styling */
+details {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+summary {
+    background-color: #f4f4f4;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+summary:hover {
+    background-color: #e0e0e0;
+}
+
+details[open] summary {
+    background-color: #b770ae;
+    color: white;
+}
+
+.content {
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+details[open] .content {
+    padding: 10px;
+    max-height: 200px; /* Adjust as needed */
+}
+
+.inner {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+details [open] + .content {
+    grid-template-rows: 1fr;
+    padding: 10px;
+}
+
+<!-- details summary {
+  list-style: none; /* Removes default arrow */
+  position: relative;
+  cursor: pointer;
+}
+
+details summary::before {
+  content: "+ "; /* Custom symbol */
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+details[open] summary::before {
+  content: "− "; /* Change to minus when open */
+} 
