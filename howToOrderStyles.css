@@ -81,12 +81,12 @@ summary {
 }
 
 summary:hover {
-    background-color: #e0e0e0;
+    background-color: silver;
 }
 
 details[open] summary {
     background-color: #b770ae;
-    color: white;
+    color: black;
 }
 
 .content {
@@ -99,6 +99,7 @@ details[open] summary {
 details[open] .content {
     padding: 10px;
     max-height: 200px; /* Adjust as needed */
+    background-color: floralwhite;
 }
 
 .inner {
