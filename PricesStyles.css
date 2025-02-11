@@ -45,13 +45,17 @@
 
 /* Prices Styling section START> */
 
-body.bodyAboutMe {
-    margin: 0;
+body {
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f4f4f4;
+    background: hsla(357, 32%, 71%, 1);
+    background: linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+    background: -moz-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+    background: -webkit-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CD9FA1", endColorstr="#110C3B", GradientType=1 );
 }
 
 .title {
@@ -63,14 +67,6 @@ body.bodyAboutMe {
 .text {
     font-size: 16px;
     line-height: 1.6;
-}
-
-body {
-    background: hsla(357, 32%, 71%, 1);
-    background: linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
-    background: -moz-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
-    background: -webkit-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CD9FA1", endColorstr="#110C3B", GradientType=1 );
 }
 
 h4 {
@@ -94,7 +90,7 @@ body.pricesBody {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: transparent; /* Ensure no conflicting background color */
 }
 
 .pricing-section {
@@ -105,7 +101,7 @@ body.pricesBody {
 .pricing-section h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    color:white
+    color: white;
 }
 
 .pricing-section .description {

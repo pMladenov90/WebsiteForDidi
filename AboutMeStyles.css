@@ -46,12 +46,16 @@
 /* About me Styling section START> */
 
 body.bodyAboutMe {
-    margin: 0;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f4f4f4;
+    background: hsla(357, 32%, 71%, 1);
+    background: linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+    background: -moz-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+    background: -webkit-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CD9FA1", endColorstr="#110C3B", GradientType=1 );
 }
 
 .containerForAboutMe {
@@ -107,14 +111,6 @@ body.bodyAboutMe {
     width: 100%;
     height: auto;
     border-radius: 10px;
-}
-
-body {
-    background: hsla(357, 32%, 71%, 1);
-    background: -webkit-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
-    background: -moz-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
-    background: linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CD9FA1", endColorstr="#110C3B", GradientType=1 );
 }
 
 h4 {
