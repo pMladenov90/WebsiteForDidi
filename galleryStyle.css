@@ -1,11 +1,12 @@
-/* Styling for the navbar links */
-.header{
+/* Navbar STAR> */
+.header {
   background-color: transparent; /* Dark background color */
   padding: 10px 20px; /* Space around the navbar */
   text-align: center; /* Center the items */
   border-radius: 10px; /* Round edges */
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .navbar {
   background-color: transparent; /* Dark background color */
   padding: 10px 20px; /* Space around the navbar */
@@ -43,32 +44,50 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: silver;
+  background-color: #444; /* Dark background color */
   min-width: 150px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 0; /* Padding around the dropdown */
 }
 
 .dropdown-content li {
   display: block;
+  padding: 10px 20px; /* Padding around the dropdown items */
+  margin: 0; /* Remove margin */
+}
+
+.dropdown-content a {
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline from links */
+  display: block;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for dropdown items */
+.dropdown-content a:hover {
+  background-color: #b770ae; /* Change background on hover */
+  border-radius: 5px; /* Rounded corners */
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* ===== ===== ===== ===== */
+/* Navbar <END */
 
 /* Body styling START> */
-body{
+body {
+  min-height: 100vh;
   background: hsla(357, 32%, 71%, 1);
   background: linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
   background: -moz-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
   background: -webkit-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CD9FA1", endColorstr="#110C3B", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#CD9FA1", endColorstr="#110C3B", GradientType=1);
 }
 
-h4{
+h4 {
   font-size: 2rem;
   color: black;
   text-align: center;
@@ -80,6 +99,10 @@ h6 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Body styling <END */
+
+/* Footer styling START> */
 
 footer {
   background-color: transparent;
@@ -111,3 +134,5 @@ footer {
   max-height: 100%;
   object-fit: contain; /* Ensures the image maintains its aspect ratio */
 }
+
+/* Footer styling <END */
