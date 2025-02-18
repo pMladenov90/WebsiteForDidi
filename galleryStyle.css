@@ -131,6 +131,18 @@ h6 {
   object-fit: cover;
 }
 
+.slideshow-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 @keyframes slide {
   0% { transform: translateX(0); }
   33% { transform: translateX(-100%); }
