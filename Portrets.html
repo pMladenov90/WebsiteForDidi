@@ -3,23 +3,109 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About me</title>
-        <link rel="stylesheet" href="styles.css">
+        <title>Portrets</title>
+        <style>
+        
+        body{
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: hsla(357, 32%, 71%, 1);
+            background: linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+            background: -moz-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+            background: -webkit-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CD9FA1", endColorstr="#110C3B", GradientType=1 );
+        }
+
+        /* Gallery START> */
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+     }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+     }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+       div.desc {
+            padding: 15px;
+            text-align: center;
+     }
+/* Gallery <END */
+
+        /* Footer section START> */
+        footer {
+            background-color: transparent;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .footer-icons {
+            display: flex;
+            justify-content: center; /* Centers the icons horizontally */
+            gap: 20px; /* Adds space between the icons */
+        }
+
+        .footer-icon {
+            width: 50px; /* Adjust width for uniform size */
+            height: 50px; /* Same as width for a square shape */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-icon img {
+            max-width: 100%; /* Ensures the icon scales with the container */
+            max-height: 100%;
+            object-fit: contain; /* Ensures the image maintains its aspect ratio */
+        }
+/* Footer section <END */
+        </style>
     </head>
 <body>
     <header>
-    <nav class="navbar">
-        <ul class="navbar-links">
-            <li><a href="shadesNcolors.html">Добре дошли</a></li>
-            <li><a href="AboutMe.html">За мен</a></li>
-            <li><a href="gallery.html">Галерия</a></li>
-            <li><a href="inProgress.html">В процес</a></li>
-            <li><a href="howToOrder.html">Как да поръчам?</a></li>
-            <li><a href="Prices.html">Цени</a></li>
-            <li><a href="#footer">Контакти</a></li>
-        </ul>
-    </nav>
-</header>
+    </header>
+    <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+          <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
 <footer id="footer">
     <h5>СВЪРЖЕТЕ СЕ С МЕН</h5>
     <div class="footer-icons">
