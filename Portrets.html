@@ -69,10 +69,28 @@
             object-fit: contain; /* Ensures the image maintains its aspect ratio */
         }
 /* Footer section <END */
+
+.back-button {
+            background-color: #b770ae; /* Button background color */
+            color: white; /* Button text color */
+            border: none; /* Remove default border */
+            padding: 10px 20px; /* Button padding */
+            font-size: 16px; /* Button font size */
+            font-family: Arial, sans-serif; /* Button font family */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            margin: 20px; /* Margin around the button */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .back-button:hover {
+            background-color: #a05c96; /* Change background on hover */
+        }
         </style>
     </head>
 <body>
     <header>
+      <button class="back-button" onclick="location.href='yourPage.html'">Back to Home</button>
     </header>
     <div class="gallery">
         <a target="_blank" href="Диди Рисунки/Портрети/Bride.png">
