@@ -20,18 +20,26 @@
         }
 
         /* Gallery START> */
-        div.gallery {
-            margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            width: 180px;
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
         }
 
-        div.gallery:hover {
+        .gallery {
+            border: 1px solid #ccc;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .gallery:hover {
             border: 1px solid #777;
         }
 
-        div.gallery img {
+        .gallery img {
             width: 100%;
             height: auto;
         }
@@ -92,7 +100,8 @@
     <header>
       <button class="back-button" onclick="location.href='yourPage.html'">Back to Home</button>
     </header>
-    <div class="gallery">
+    <div class="gallery-container">
+      <div class="gallery">
         <a target="_blank" href="Диди Рисунки/Портрети/Bride.png">
           <img src="Диди Рисунки/Портрети/Bride.png" alt="Bride portret" width="600" height="400">
         </a>
