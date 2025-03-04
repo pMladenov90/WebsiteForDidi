@@ -52,15 +52,24 @@
             border: 1px solid #ccc;
             overflow: hidden;
             border-radius: 5px;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
         }
 
         .gallery:hover {
             border: 1px solid #777;
+            transform: scale(1.05); /* Slightly enlarge the image on hover */
         }
 
         .gallery img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the entire container */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery:hover img {
+            transform: scale(1.1); /* Slightly enlarge the image on hover */
         }
 /* Gallery <END */
 
