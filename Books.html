@@ -3,43 +3,126 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About me</title>
-        <link rel="stylesheet" href="styles.css">
+        <title>Books</title>
+        <style>
+        
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: hsla(357, 32%, 71%, 1);
+            background: linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+            background: -moz-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+            background: -webkit-linear-gradient(45deg, hsla(357, 32%, 71%, 1) 15%, hsla(246, 66%, 14%, 1) 63%);
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CD9FA1", endColorstr="#110C3B", GradientType=1 );
+        }
+        
+        /* Header section START> */
+        .back-button {
+            background-color: #b770ae; /* Button background color */
+            color: white; /* Button text color */
+            border: none; /* Remove default border */
+            padding: 10px 20px; /* Button padding */
+            font-size: 16px; /* Button font size */
+            font-family: Arial, sans-serif; /* Button font family */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            margin: 20px; /* Margin around the button */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        .back-button:hover {
+            background-color: #a05c96; /* Change background on hover */
+        }
+        /* Header section <END */
+
+        /* Gallery START> */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .gallery {
+            border: 1px solid #ccc;
+            overflow: hidden;
+            border-radius: 5px;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery:hover {
+            border: 1px solid #777;
+            transform: scale(1.05); /* Slightly enlarge the image on hover */
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the entire container */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery:hover img {
+            transform: scale(1.1); /* Slightly enlarge the image on hover */
+        }
+/* Gallery <END */
+
+        /* Footer section START> */
+        footer {
+            background-color: transparent;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .footer-icons {
+            display: flex;
+            justify-content: center; /* Centers the icons horizontally */
+            align-items: center; /* Centers the icons vertically */
+            gap: 20px; /* Adds space between the icons */
+        }
+
+        .footer-icon {
+            width: 50px; /* Adjust width for uniform size */
+            height: 50px; /* Same as width for a square shape */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-icon img {
+            max-width: 100%; /* Ensures the icon scales with the container */
+            max-height: 100%;
+            object-fit: contain; /* Ensures the image maintains its aspect ratio */
+        }
+/* Footer section <END */
+        </style>
     </head>
 <body>
     <header>
-    <nav class="navbar">
-        <ul class="navbar-links">
-            <li><a href="shadesNcolors.html">Добре дошли</a></li>
-            <li><a href="AboutMe.html">За мен</a></li>
-            <li><a href="gallery.html">Галерия</a></li>
-            <li><a href="inProgress.html">В процес</a></li>
-            <li><a href="howToOrder.html">Как да поръчам?</a></li>
-            <li><a href="Prices.html">Цени</a></li>
-            <li><a href="#footer">Контакти</a></li>
-        </ul>
-    </nav>
-</header>
-<footer id="footer">
-    <h5>СВЪРЖЕТЕ СЕ С МЕН</h5>
-    <div class="footer-icons">
-        <a href="https://www.facebook.com/DidisDarkArt" class="footer-icon">
-            <img src="facebookIconBlack.png" alt="Icon 1"/>
+      <button class="back-button" onclick="location.href='yourPage.html'">Back to Home</button>
+    </header>
+    <div class="gallery-container">
+      <div class="gallery">
+        <a target="_blank" href="Диди Рисунки/Портрети/Bride.png">
+          <img src="Диди Рисунки/Портрети/Bride.png" alt="Bride portret">
         </a>
-        <a href="https://www.instagram.com/shades.and.colors.art/" class="footer-icon">
-            <img src="instagramIconBlack.png" alt="Icon 2"/>
-        </a>
-        <a href="https://www.youtube.com/@shadesandcolors3140/featured" class="footer-icon">
-            <img src="youtubeIconBlack.png" alt="Icon 3"/>
-        </a>
-        <a href="https://www.youtube.com/@shadesandcolors3140/featured" class="footer-icon">
-            <img src="emailIcon.png" alt="Icon 4"/>
-        </a>
-    </div>
+      </div>
+      
 
     <div class="footer-content">
         <p>Shades And Colors, since 2019</p>
     </div>
 </footer>
 </body>
-</html> 
+</html>
